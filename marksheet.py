@@ -39,4 +39,4 @@ elif per <= 60 and per >= 50:
     print(" Good " + name)
 else:
     print(" Grade : F")
-    print(" Sorry you're Failed " + name)
+    print(" Sorry you are Failed " + name)
