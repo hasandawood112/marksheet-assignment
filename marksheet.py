@@ -9,7 +9,7 @@ chem = float(input("Enter Chemistry Marks : "))
 phy = float(input("Enter Physics Marks : "))
 isl = float(input("Enter Islamiat Marks : "))
 total = float(eng+urdu+math+chem+phy+isl)
-per = int((total/600)*100)
+per = float((total/600)*100)
 print("\n\t\t Marksheet")
 print(" Name : " + name + "\t\t Father Name : " + fName)
 print(" Class : " +  str(clas) +  section + "\t\t")
@@ -20,23 +20,23 @@ print(" Maths : ", math)
 print(" Physics : ", phy)
 print(" Chemistry : ", chem)
 print(" Islamiat : ", isl)
-print("\n Marks Obtained : " + str(total) + "\t\t Percentage : " + str(per))
+print("\n Marks Obtained : " + str(total) + "\t\t Percentage : ", per)
 
 if per <= 100 and per >= 90:
     print(" Grade : A+")
-    print("Excellent " + name)
+    print(" Excellent " + name)
 elif per <= 90 and per >= 80:
     print(" Grade : A")
-    print("Weldone " + name)
+    print(" Weldone " + name)
 elif per <= 80 and per >= 70:
     print(" Grade : B")
-    print("Awesome " + name)
+    print(" Awesome " + name)
 elif per <= 70 and per >= 60:
     print(" Grade : C")
-    print("Better " + name)
+    print(" Better " + name)
 elif per <= 60 and per >= 50:
     print(" Grade : D")
-    print("Good " + name)
+    print(" Good " + name)
 else:
     print(" Grade : F")
     print(" Sorry you're Failed " + name)
