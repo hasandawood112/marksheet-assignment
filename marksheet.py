@@ -1,0 +1,42 @@
+name = input("Enter your Name : ")
+fName = input("Enter your Father Name : ")
+clas = input("Enter your class : ")
+section = input("Enter your section : ")
+eng = float(input("Enter English Marks : "))
+urdu = float(input("Enter Urdu Marks : "))
+math = float(input("Enter Maths Marks : "))
+chem = float(input("Enter Chemistry Marks : "))
+phy = float(input("Enter Physics Marks : "))
+isl = float(input("Enter Islamiat Marks : "))
+total = float(eng+urdu+math+chem+phy+isl)
+per = int((total/600)*100)
+print("\n\t\t Marksheet")
+print(" Name : " + name + "\t\t Father Name : " + fName)
+print(" Class : " +  str(clas) +  section + "\t\t")
+print("\n")
+print(" English : ", eng)
+print(" urdu : ", urdu)
+print(" Maths : ", math)
+print(" Physics : ", phy)
+print(" Chemistry : ", chem)
+print(" Islamiat : ", isl)
+print("\n Marks Obtained : " + str(total) + "\t\t Percentage : " + str(per))
+
+if per <= 100 and per >= 90:
+    print(" Grade : A+")
+    print("Excellent " + name)
+elif per <= 90 and per >= 80:
+    print(" Grade : A")
+    print("Weldone " + name)
+elif per <= 80 and per >= 70:
+    print(" Grade : B")
+    print("Awesome " + name)
+elif per <= 70 and per >= 60:
+    print(" Grade : C")
+    print("Better " + name)
+elif per <= 60 and per >= 50:
+    print(" Grade : D")
+    print("Good " + name)
+else:
+    print(" Grade : F")
+    print(" Sorry you're Failed " + name)
